@@ -1,0 +1,9 @@
+query MyQuery {
+  testimonials {
+    name
+    image
+    location
+    description
+    id
+  }
+}

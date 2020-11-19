@@ -1,0 +1,17 @@
+mutation MyMutation(
+  $name: String!
+  $location: String!
+  $description: String!
+) {
+  insert_testimonials(
+    objects: {
+      name: $name
+      location: $location
+      description: $description
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

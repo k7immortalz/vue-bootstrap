@@ -1,0 +1,23 @@
+query property_types {
+
+  property_types (where: {status: {_eq: true}}){
+    id
+    property_type
+    deal_options
+    slug
+    property_type_option {
+      id
+      name
+    }
+  }
+  property_type_options(where: {status: {_eq: true}}) {
+    name
+		id
+  }
+
+  property_type_attributes(where: {status: {_eq: true}}) {
+    attributes
+    id
+    property_type_id
+  }
+}

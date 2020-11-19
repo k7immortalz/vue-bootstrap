@@ -1,0 +1,25 @@
+mutation MyMutation(
+  $f_name: String!
+  $l_name: String!
+  $mobile: String!
+  $email: String!
+  $message: String!
+  $skype: String!
+  $type: String!
+) {
+  insert_contactus(
+    objects: {
+      first_name: $f_name
+      last_name: $l_name
+      mobile: $mobile
+      email: $email
+      message: $message
+      skype_id: $skype
+      type: $type
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

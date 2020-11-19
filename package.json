@@ -1,0 +1,40 @@
+{
+  "name": "property-care",
+  "dependencies": {
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/apollo": "^4.0.1-rc.4",
+    "bootstrap-vue": "^2.18.1",
+    "graphql-tag": "^2.11.0",
+    "i": "^0.3.6",
+    "jquery": "^3.5.1",
+    "leaflet": "^1.7.1",
+    "leaflet-geosearch": "^3.0.6",
+    "npm": "^6.14.8",
+    "nuxt": "latest",
+    "nuxt-leaflet": "0.0.21",
+    "nuxt-material-design-icons": "^1.0.4",
+    "prism-themes": "^1.4.1",
+    "vue-beautiful-chat": "^2.5.0",
+    "vue-fab": "^2.3.1",
+    "vue-fb-customer-chat": "^0.2.0",
+    "vue-flag-icon": "^1.0.6",
+    "vue-form-generator": "^2.3.4",
+    "vue-form-wizard": "^0.8.4",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-youtube-embed": "^2.2.2",
+    "vue2-leaflet": "^2.6.0",
+    "vue2-leaflet-markercluster": "^3.1.0",
+    "vuelidate": "^0.7.5",
+    "vuetify": "^2.3.13"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+mutation MyMutation(
+  $r_name: String!
+  $y_name: String!
+  $r_mobile: String!
+  $y_mobile: String!
+  $r_email: String!
+  $y_email: String!
+  $r_skype: String!
+  $type: String!
+) {
+  insert_referrals(
+    objects: {
+      r_name: $r_name
+      y_name: $y_name
+      r_mobile: $r_mobile
+      y_mobile: $y_mobile
+      r_email: $r_email
+      y_email: $y_email
+      r_skype: $r_skype
+      type: $type
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

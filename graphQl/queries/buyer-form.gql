@@ -1,0 +1,9 @@
+mutation MyMutation($loan_amount: Int!, $mobile: Int!) {
+  insert_service_buyer_form(objects: {loan_amount: $loan_amount, mobile: $mobile}) {
+    returning {
+      id
+      loan_amount
+      mobile
+    }
+  }
+}

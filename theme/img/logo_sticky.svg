@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="467px" height="69px" viewBox="0 0 467 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="PropertyCare" font-family="Roboto-Medium, Roboto" font-size="60" font-weight="400" fill="#555555">
+            <tspan x="91" y="64">PropertyCare </tspan>
+        </text>
+        <g id="apartment-24px" transform="translate(-7.000000, 1.000000)">
+            <rect id="Rectangle" x="0" y="0" width="72" height="72"></rect>
+            <path d="M50,35 L50,9 L21,9 L21,21 L8,21 L8,63 L33,63 L33,51 L39,51 L39,63 L63,63 L63,35 L50,35 Z M21,61 L11,61 L11,51 L21,51 L21,61 Z M21,48 L11,48 L11,38 L21,38 L21,48 Z M21,35 L11,35 L11,25 L21,25 L21,35 Z M34,48 L24,48 L24,38 L34,38 L34,48 Z M34,35 L24,35 L24,25 L34,25 L34,35 Z M34,22 L24,22 L24,12 L34,12 L34,22 Z M47,48 L37,48 L37,38 L47,38 L47,48 Z M47,35 L37,35 L37,25 L47,25 L47,35 Z M47,22 L37,22 L37,12 L47,12 L47,22 Z M60,61 L50,61 L50,51 L60,51 L60,61 Z M60,48 L50,48 L50,38 L60,38 L60,48 Z" id="Shape" fill="#2F6700" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

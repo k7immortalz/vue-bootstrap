@@ -1,0 +1,35 @@
+mutation MyMutation(
+  $enquiry_Category: String!
+  $enquiry_sub_Category: String!
+  $location: String!
+  $enquiry_type: String!
+  $enquiry_find_us: String!
+  $enquiry_country_code: String!
+  $name: String!
+  $mobile: Int!
+  $email: String!
+  $desc: String!
+  $service: String!
+  $loan_amount: Int!
+) {
+  insert_t_enquiry(
+    objects: {
+      category: $enquiry_Category
+      sub_category: $enquiry_sub_Category
+      location: $location
+      country_code: $enquiry_country_code
+      emailid: $email
+      findus: $enquiry_find_us
+      mobile_no: $mobile
+      name: $name
+      type: $enquiry_type
+      description: $desc
+      service_type: $service
+      loan_amount: $loan_amount
+    }
+  ) {
+    returning {
+      enquiry_id
+    }
+  }
+}

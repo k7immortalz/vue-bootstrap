@@ -1,0 +1,8 @@
+mutation MyMutation($email: String!,$company_name:String!, $number_of_employees: Int!) {
+  insert_service_corporate_form(objects: {email: $email, company_name: $company_name, number_of_employees: $number_of_employees}) {
+    returning {
+      id
+      number_of_employees
+    }
+  }
+}

@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Casagrand",
+      "value": "casagrand",
+      "location": "Chennai",
+      "address": "casagrand Apartments, opposite to Valechery bus stand,velachaery, Chennai",
+      "amenities": ["Swimming pool","security","Maintenance Staff","Broadband","Cafteria"],
+      "floors": "12",
+      "photos": ["img/properties/prop1.jpg","img/properties/prop2.jpg","img/properties/prop3.jpg","img/properties/prop4.jpg"]
+    },
+    {
+      "name": "Galaxy",
+      "value": "galaxy",
+      "location": "Kochin",
+      "address": "Galaxy Apartments, opposite to Valechery bus stand,velachaery, Kochin",
+      "amenities": ["Garder","parking","security","Bank/ATM","Laundary"],
+      "floors": "10",
+    "photos": ["img/properties/prop5.jpg","img/properties/prop5.jpg","img/properties/prop5.jpg","img/properties/prop8.jpg"]
+
+    },
+    {
+      "name": "Asgaurd",
+      "value": "asgaurd",
+      "location": "bangalore",
+      "address": "Asgaurd Apartments, opposite to Valechery bus stand,velachaery, bangalore",
+      "amenities": ["Gym","parking","security","Intercom","temple"],
+      "floors": "15",
+      "photos": ["img/properties/prop9.jpg","img/properties/prop10.jpg","img/properties/prop11.jpg","img/properties/prop12S.jpg"]
+
+    }
+  ]

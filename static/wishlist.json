@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "type": "Villa",
+        "proname": "2BHK Apartment in E City",
+        "name": "Concorde Midway City",
+        "desc": "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
+        "price": "INR 5400",
+        "feet": "/Sq Feet",
+        "units": "10 Units",
+        "review": "Superb",
+        "enquires":"35 Enquiries", 
+        "rating":"8.9",
+        "marker_image": "/img/properties/prop1.jpg",
+        "address": "Koramangala"
+
+    },
+    {
+        "id": 2,
+        "type": "Villai",
+        "proname": "2BHK Apartment in E City",
+        "name": "Concorde Midway City",
+        "desc": "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
+        "price": "INR 5400",
+        "feet": "/Sq Feet",
+        "units": "10 Units",
+        "review": "Superb",
+        "enquires":"35 Enquiries", 
+        "rating":"8.9",
+        "marker_image": "/img/properties/prop2.jpg",
+        "address": "Koramangala"
+    },
+    {
+        "id": 3,
+        "type": "Villa",
+        "proname": "2BHK Apartment in E City",
+        "name": "Concorde Midway City",
+        "desc": "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
+        "price": "INR 5400",
+        "feet": "/Sq Feet",
+        "units": "10 Units",
+        "review": "Superb",
+        "enquires":"35 Enquiries", 
+        "rating":"8.9",
+        "marker_image": "/img/properties/prop4.jpg",
+        "address": "Koramangala"
+    },
+    {
+        "id": 4,
+        "type": "Villai",
+        "proname": "2BHK Apartment in E City",
+        "name": "Concorde Midway City",
+        "desc": "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
+        "price": "INR 5400",
+        "feet": "/Sq Feet",
+        "units": "10 Units",
+        "review": "Superb",
+        "enquires":"35 Enquiries", 
+        "rating":"8.9",
+        "marker_image": "/img/properties/prop4.jpg",
+        "address": "Koramangala"
+    }
+]

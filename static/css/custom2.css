@@ -1,0 +1,261 @@
+.form-control {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    height: calc(2.65rem + 2px);
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #1dbe72;
+  }
+  
+
+  .container_check {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding-left: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400;
+  }
+  .container_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .container_check input:checked ~ .checkmark {
+    background-color: #1dbe72;
+    border: 1px solid transparent;
+  }
+  .container_check .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .container_check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .container_check.version_2 {
+    padding: 13px 15px 13px 45px;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    min-height: 30px;
+    font-weight: 400;
+  }
+  .container_check.version_2 .checkmark {
+    height: 24px;
+    width: 24px;
+    top: 10px;
+    left: 10px;
+  }
+  .container_check.version_2 .checkmark:after {
+    top: 5px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+  }
+  
+  .container_check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+
+  .container_radio {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding-left: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container_radio input {
+    position: absolute;
+    opacity: 0;
+  }
+  .container_radio input:checked ~ .checkmark:after {
+    opacity: 1;
+  }
+  .container_radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  .container_radio .checkmark:after {
+    display: block;
+    content: "";
+    position: absolute;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1dbe72;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .container_radio.version_2 {
+    padding: 13px 15px 13px 45px;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    min-height: 30px;
+    font-weight: 400;
+  }
+  .container_radio.version_2 input:checked ~ .checkmark:before {
+    opacity: 1;
+  }
+  .container_radio.version_2 input:checked ~ .checkmark {
+    border: 1px solid transparent;
+  }
+  .container_radio.version_2 .checkmark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+  }
+  .container_radio.version_2 .checkmark:after {
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+  }
+  .container_radio.version_2 .checkmark:before {
+    display: block;
+    content: "";
+    position: absolute;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    z-index: 999;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .container_radio.version_2.active, .container_radio.version_2:hover, .container_check.version_2.active, .container_check.version_2:hover {
+    border: 1px solid #1dbe72;
+  }
+  
+  .radio_input .container_radio {
+    display: inline-block;
+    margin: 5px 0 0 0;
+  }
+  
+
+  .fileupload {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin-bottom: 35px;
+  }
+  
+  input[type=file] {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    color: #999;
+  }
+  input[type=file]:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  input[type=file]::-webkit-file-upload-button, input[type=file].invalid::-webkit-file-upload-button, input[type=file].valid::-webkit-file-upload-button {
+    color: #fff;
+    font-size: 13px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    padding: 8px 10px 8px 38px;
+    font-weight: 600;
+    background: #1dbe72 url(../img/upload_icon.svg) 8px center no-repeat;
+    outline: none;
+  }
+  input[type=file]::-webkit-file-upload-button:focus, input[type=file].invalid::-webkit-file-upload-button:focus, input[type=file].valid::-webkit-file-upload-button:focus {
+    box-shadow: none;
+    outline: none;
+  }

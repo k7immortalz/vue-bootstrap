@@ -1,0 +1,39 @@
+mutation MyMutation(
+  $title: String!
+  $first_name: String!
+  $last_name: String!
+  $mobile: String!
+  $email: String!
+  $designation: String!
+  $ctc: String!
+  $location: Int!
+  $keyskills: String!
+  $desc: String!
+  $qualification: String!
+  $experience: String!
+  $funtional_area: String!
+) {
+  insert_careers(
+    objects: {
+      city: $location
+      functional_area: $funtional_area
+      current_designation: $designation
+      current_gross_salary: $ctc
+      email: $email
+      experience: $experience
+      first_name: $first_name
+      key_skills: $keyskills
+      last_name: $last_name
+      mobile: $mobile
+      qualification: $qualification
+      short_desc: $desc
+      title: $title
+    }
+  ) {
+    returning {
+      id
+      city
+      email
+    }
+  }
+}

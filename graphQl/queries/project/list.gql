@@ -1,0 +1,29 @@
+query projects {
+  projects{
+    address
+    approved_by
+    builder_name
+    created_by
+    created_on
+    edited_by
+    edited_on
+    file_id
+    id
+    image_id
+    langitude
+    latitude
+    locality
+    pincode
+    project_id
+    project_name
+    project_type
+    property_type_id
+    property_type_option_id
+    status
+  }
+  projects_aggregate {
+    aggregate {
+      count
+    }
+  }
+}

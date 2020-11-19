@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="PropertyCare - Propert Care Management, Done The Right Way.">
+    <meta name="author" content="Clariti">
+    <title>PropertyCare | Propert Care Management, Done The Right Way.</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="datepicker_mobile_full"><!-- Remove this class to disable datepicker full on mobile -->
+		
+	<div id="page">
+
+	
+	<main>
+		<section class="hero_single version_3">
+			<div class="wrapper">
+				<div class="container">
+					<div class="main_search">
+						<h3>Loan Services</h3>
+						<p>lorem ipsum....!</p>
+						<form>
+						<div class="custom-search-input-2">
+							<div class="form-group">
+									<input class="form-control" type="text" placeholder="Where..." id="autocomplete">
+									<i class="icon_pin_alt"></i>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" name="dates" placeholder="When..">
+									<i class="icon_calendar"></i>
+								</div>
+							
+							<div class="panel-dropdown">
+									<a href="#">Guests <span class="qtyTotal">1</span></a>
+									<div class="panel-dropdown-content">
+										<!-- Quantity Buttons -->
+										<div class="qtyButtons">
+											<label>Adults</label>
+											<input type="text" name="qtyInput" value="1">
+										</div>
+										<div class="qtyButtons">
+											<label>Childrens</label>
+											<input type="text" name="qtyInput" value="0">
+										</div>
+									</div>
+								</div>
+							<div class="form-group text-right">
+								<input type="submit" class="btn_search" value="Search">
+							</div>
+						</div>
+						<!-- /row -->
+					</form>
+					</div>
+					<!-- /main_search -->	
+				</div>
+			</div>
+		</section>
+		<!-- /hero_single -->
+
+	</main>
+	<!-- /main -->
+
+	
+	</div>
+	<!-- page -->
+	
+	
+	
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.js"></script>
+    <script src="js/main.js"></script>
+	<script src="assets/validate.js"></script>
+	
+	<!-- DATEPICKER  -->
+	<script>
+	$(function() {
+	  'use strict';
+	  $('input[name="dates"]').daterangepicker({
+		  autoUpdateInput: false,
+		  minDate:new Date(),
+		  locale: {
+			  cancelLabel: 'Clear'
+		  }
+	  });
+	  $('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+		  $(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
+	  });
+	  $('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
+		  $(this).val('');
+	  });
+	});
+	</script>
+	
+	<!-- INPUT QUANTITY  -->
+	<script src="js/input_qty.js"></script>
+
+	<!-- Autocomplete -->
+    <script>
+    function initMap() {
+	  var input = document.getElementById('autocomplete');
+	  var autocomplete = new google.maps.places.Autocomplete(input);
+	 
+	  autocomplete.addListener('place_changed', function() {
+	    var place = autocomplete.getPlace();
+	    if (!place.geometry) {
+	      window.alert("Autocomplete's returned place contains no geometry");
+	      return;
+	    }
+
+	    var address = '';
+	    if (place.address_components) {
+	      address = [
+	        (place.address_components[0] && place.address_components[0].short_name || ''),
+	        (place.address_components[1] && place.address_components[1].short_name || ''),
+	        (place.address_components[2] && place.address_components[2].short_name || '')
+	      ].join(' ');
+	    } 
+	  });
+	}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script>
+	
+</body>
+</html>
